@@ -60,20 +60,12 @@ const TreeRenderer: React.FC<TreeRendererProps> = ({ type, decorations = [], cla
           alt={treeData.name}
           className={`w-full h-full object-contain drop-shadow-xl ${isGlowing ? 'animate-glow' : 'animate-sway'}`}
         />
-        {/* Topper at absolute top */}
-        {decorations.filter(d => d.type === 'star' || d.type === 'angel').map(dec => (
-          <img
-            key={dec.id}
-            src={dec.image}
-            alt={dec.type}
-            className="absolute top-0 left-1/2 -translate-x-[75%] w-24 h-24 object-contain animate-pop-in drop-shadow-md z-10"
-          />
-        ))}
-        
-        {/* Other decorations overlay */}
+        {/* All decorations overlay */}
         <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full pointer-events-none">
-          {decorations.filter(d => d.type !== 'star' && d.type !== 'angel').map((dec) => {
-            const size = 8 * dec.scale;
+          {decorations.map((dec) => {
+            // Make toppers bigger
+            const isTopper = dec.type === 'star' || dec.type === 'angel';
+            const size = isTopper ? 23 * dec.scale : 8 * dec.scale;
             return (
               <image
                 key={dec.id}

@@ -107,7 +107,7 @@ Merry Christmas, Kaikai! 🎄✨
               🎄 Merry Christmas, Kai! 🎄
             </h1>
             <p className="text-base sm:text-xl md:text-2xl text-white opacity-90 mb-8 sm:mb-12 max-w-lg transition-all px-2">
-              You mentioned about wanting to build a christmas tree, can this be a funny start?
+              You mentioned about wanting to build a christmas tree earlier when you told me about your childhood, can this be a funny start?
             </p>
             <button
               onClick={() => setScreen(GameScreen.TREE_SELECTION)}
