@@ -104,9 +104,9 @@ Merry Christmas, Kaikai! 🎄✨
         return (
           <div className="flex flex-col items-center justify-center h-screen px-4 sm:px-6 text-center z-10 relative">
             <h1 className="text-4xl sm:text-6xl md:text-8xl font-christmas text-red-500 drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)] mb-4 sm:mb-6 animate-pulse leading-tight">
-              🎄 Merry Christmas, Kai! 🎄
+              🎄 Merry Christmas, Kaikai! 🎄
             </h1>
-            <p className="text-base sm:text-xl md:text-2xl text-white opacity-90 mb-8 sm:mb-12 max-w-lg transition-all px-2">
+            <p className="text-base sm:text-xl md:text-2xl text-white opacity-90 mb-8 sm:mb-12 max-w-3xl transition-all px-2">
               You mentioned about wanting to build a christmas tree earlier when you told me about your childhood, can this be a funny start?
             </p>
             <button
