@@ -66,7 +66,7 @@ const TreeRenderer: React.FC<TreeRendererProps> = ({ type, decorations = [], cla
             key={dec.id}
             src={dec.image}
             alt={dec.type}
-            className="absolute top-0 left-[40%] -translate-x-[75%] w-24 h-24 object-contain animate-pop-in drop-shadow-md z-10"
+            className="absolute top-0 left-1/2 -translate-x-[75%] w-24 h-24 object-contain animate-pop-in drop-shadow-md z-10"
           />
         ))}
         
